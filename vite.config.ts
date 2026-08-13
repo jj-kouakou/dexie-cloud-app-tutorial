@@ -19,7 +19,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
-  const base = process.env.PUBLIC_URL ?? './'
+  const base = '/dexie-cloud-app-tutorial/';
   
   return {
     base,
