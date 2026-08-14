@@ -22,11 +22,11 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "build:check": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -e dexie-cloud-todo-app",
+    "deploy": "gh-pages -d build -e dist",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui"
@@ -48,7 +48,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/node": "^20.19.25",
+    "@types/node": "^20.19.43",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^5.2.0",
